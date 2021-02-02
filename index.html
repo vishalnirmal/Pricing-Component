@@ -5,50 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | Pricing Component</title>
 </head>
 <body>
   <div class="main">
     <h1>Our Pricing</h1>
     <div class="duration">
-      <p>Monthly</p>
+      <p>Annualy</p>
       <label class="toggle-button">
-        <input type="checkbox" class="checkbox">
+        <input type="checkbox" class="checkbox" checked>
         <span class="slider"></span>
       </label>
-      <p>Annually</p>
+      <p>Monthly</p>
     </div>
     <div class="price-cards">
       <div class="card">
         <p class="pack">Basic</p>
-        <p class="price">$19.99</p>
-        <p class="features">500 GB Storage</p>
-        <p class="features">2 Users Allowed</p>
-        <p class="features">Send up to 3 GB</p>
+        <p class="price"><span>&dollar;</span><span class="amount">19.99</span></p>
+        <div class="features">
+          <p>500 GB Storage</p>
+          <p>2 Users Allowed</p>
+          <p>Send up to 3 GB</p>
+        </div>
         <p class="learn-more">Learn More</p>
       </div>
-    </div>
-    <div class="price-cards">
       <div class="card">
         <p class="pack">Professional</p>
-        <p class="price">&dollar;24.99</p>
-        <p class="features">1 TB Storage</p>
-        <p class="features">5 Users Allowed</p>
-        <p class="features">Send up to 10 GB</p>
+        <p class="price"><span>&dollar;</span><span class="amount">24.99</span></p>
+        <div class="features">
+          <p>1 TB Storage</p>
+          <p>5 Users Allowed</p>
+          <p>Send up to 10 GB</p>
+        </div>
         <p class="learn-more">Learn More</p>
       </div>
-    </div>
-    <div class="price-cards">
       <div class="card">
         <p class="pack">Master</p>
-        <p class="price">&dollar;39.99</p>
-        <p class="features">2 TB Storage</p>
-        <p class="features">10 Users Allowed</p>
-        <p class="features">Send up to 20 GB</p>
+        <p class="price"><span>&dollar;</span><span class="amount">39.99</span></p>
+        <div class="features">
+          <p>2 TB Storage</p>
+          <p>10 Users Allowed</p>
+          <p>Send up to 20 GB</p>
+        </div>
         <p class="learn-more">Learn More</p>
       </div>
     </div>
   </div>
+  <script src="./index.js"></script>
 </body>
 </html>
