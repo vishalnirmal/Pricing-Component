@@ -153,3 +153,29 @@ h1{
 .card:nth-child(3){
     border-radius: 0 10px 10px 0;
 }
+@media (max-width: 1000px){
+    .main{
+        padding: 3% 6%;
+    }
+    .price-cards{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .card{
+        width: 100%;
+        max-width: calc(450px - 4rem);
+        margin: 1rem auto;
+    }
+    .card:nth-child(2){
+        margin: 2rem auto;
+        padding: 0 2rem;
+    }
+}
+@media (max-width: 550px){
+    body{
+        background: var(--very-light-grayish-blue) url("./images/bg-top.svg") no-repeat top -5vh right -50vw;
+    }
+    .card{
+        width: calc(100% - 4rem);
+    }
+}
